@@ -10,10 +10,11 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        TextView text = new TextView(this);
-        text.setText("🤖 Welcome to BossNyra V3\n\nBoss + Nyra is Ready!");
-        text.setTextSize(22);
+        TextView tv = new TextView(this);
+        tv.setText("🤖 BossNyra AI\n\nWelcome!");
+        tv.setTextSize(24);
+        tv.setPadding(50, 100, 50, 50);
 
-        setContentView(text);
+        setContentView(tv);
     }
 }
