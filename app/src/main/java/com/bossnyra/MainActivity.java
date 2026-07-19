@@ -7,6 +7,8 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+  private static final String GEMINI_API_KEY = "AIzaSyDYIkZzIcW0AbbGMsu6VkWj6dmylt7xOD0
+  
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,7 +19,7 @@ public class MainActivity extends Activity {
         startButton.setOnClickListener(v -> {
             Toast.makeText(
                     this,
-                    "API Key Loaded: " + ApiKey.GEMINI_API_KEY.substring(0, 10) + "...",
+                    "API Key Loaded: " + .GEMINI_API_KEY.substring(0, 10) + "...",
                     Toast.LENGTH_LONG
             ).show();
         });
