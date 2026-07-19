@@ -15,7 +15,11 @@ public class MainActivity extends Activity {
         Button startButton = findViewById(R.id.startButton);
 
         startButton.setOnClickListener(v -> {
-            Toast.makeText(this, "BossNyra Chat Started!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(
+                    this,
+                    "API Key Loaded: " + ApiKey.GEMINI_API_KEY.substring(0, 10) + "...",
+                    Toast.LENGTH_LONG
+            ).show();
         });
     }
 }
